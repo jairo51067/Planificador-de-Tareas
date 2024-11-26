@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calendario del Mes</h1>
+    </header>
+    <hr style="margin: 1%;  border: 1px solid #98FB98;">
+    <main>
+        <div id="calendar-container">
+            <div id="month-year">
+                <button id="prev-month" onclick="changeMonth(-1)">&#10094;</button>
+                <span id="month-year-text"></span>
+                <button id="next-month" onclick="changeMonth(1)">&#10095;</button>
+            </div>
+            <div id="calendar"></div>
+        </div>
+        <br>
+        <button onclick="goToToday()" class="todayBtn">Hoy</button>
+        <br>
+        <button onclick="location.href='index.html'" class="returnBtn">Regresar al Planificador</button>
+    </main>
+
+    <footer>
+        <h4>Author: Jairo Cárdenas<br>
+            <a href="mailto:jairo.cardenas.dev@gmail.com">jairo.cardenas.dev@gmail.com</a>
+        </h4>
+    </footer>
+
+    <script src="js/calendario.js"></script>
+</body>
+
+</html>

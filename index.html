@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+  name="description"
+  content="¿Te sientes abrumado por las tareas pendientes? ¡Nuestro planificador de tareas online te ayudará! Agrega tareas fácilmente, marcalas como completadas y sigue tu progreso. ¡Nunca olvides nada y logra tus objetivos con mayor facilidad!">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- SweetAlert2 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Planificador de Tareas</title>
+</head>
+
+<body>
+  <header>
+    <div id="newTask" class="header">
+      <h1>Planificador de Tareas</h1>
+      <div class="contenedor-input_btn">
+        <!-- <i class="fa-duotone fa-solid fa-circle-plus"></i> -->
+        <!-- <i class="fa-solid fa-arrow-right-from-bracket"></i> -->
+        <i class="fa-solid fa-angles-right"></i>
+        <input type="text" id="taskInput" placeholder="¿Qué quieres hacer hoy?" aria-label="Nueva tarea">
+        <button onclick="newElement()" class="addBtn" aria-label="Agregar tarea">Agregar</button>
+      </div>
+    </div>
+  </header>
+
+  <main style="background-color:#6495ED;">
+    <h2 style="background-color:#6495ED;"><i class="fas fa-list-ul"></i> Mis Tareas </h2>
+    <p>Aquí encontrarás todas tus tareas pendientes y podrás marcarlas como completadas.</p>
+    <hr style="margin: 1%;  border: 1px solid #98FB98;">
+    <ul id="taskList">
+        <!-- Las tareas se agregarán dinámicamente aquí -->
+        <li>Planificar el día.</li>
+        <li>Compras, Lavar, Reunión, Estudiar.</li>
+        <li>Pagos, Hacer, Visitar, Celebrar.</li>
+        <li>Organizar, Escribir, Renovar, Aprender.</li>
+        <li>Enviar, Promocionar, Leer, Recordar.</li>
+    </ul>
+    <hr style="margin: 1%;  border: 1px solid #98FB98;">
+    <p>Presiona sobre la tarea para más opciones: marcar como completada o restaurar.</p>
+    <button onclick="location.href='calendario.html'" class="calendarBtn"><i class="fa-sharp fa-solid fa-calendar-days"></i> Calendario</button>
+  </main>
+
+  <footer>
+    <h3>Autor: Jairo Cárdenas<br>
+      <a href="mailto:jairo.cardenas.dev@gmail.com">jairo.cardenas.dev@gmail.com</a>
+    </h3>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
