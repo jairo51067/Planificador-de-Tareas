@@ -7,7 +7,7 @@ El Planificador de Tareas es una aplicación web diseñada para simplificar la o
 
 Imagen del proyecto
 
-![Texto alternativo](/ruta/a/la/imagen.jpg)
+![Planificador de tareas pc](https://github.com/user-attachments/assets/645bf850-bc54-4963-b2a8-ceab48a62b7d)
 <br>
 
 
